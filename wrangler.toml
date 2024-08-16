@@ -1,31 +1,10 @@
-# Project Name
 name = "my-cloudflare-project"
-
-# Specify the type of project (can be "javascript", "rust", etc.)
 type = "javascript"
 
-# Build configuration
 [build]
-# Command to build the project (you can adjust this according to your setup)
 command = "pnpm install && pnpm run build"
-
-# Directory to change to before running the build command
-cwd = "."
-
-# Specify the output directory for your build
 upload = { format = "modules", dir = "dist" }
 
-# Environment settings for the build
-[build.environment]
-# Node.js version required for the build
-node_version = "20.x"
-# PNPM version required for the build
-pnpm_version = "9.x"
-
-# Cloudflare Pages specific configuration
-[[pages]]
-# The directory where the build output is stored
-build_output_dir = "dist"
-
-# Optional: Set the root directory for the project if different from the root of the repo
-root = "."
+[env]
+NODE_VERSION = "20.x"
+PNPM_VERSION = "9.x"
