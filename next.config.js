@@ -9,5 +9,11 @@ module.exports = {
         pathname: '/s/files/**'
       }
     ]
-  }
+  },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization.splitChunks.maxSize = 250000; // Adjust the size as needed
+    }
+    return config;
+  },
 };

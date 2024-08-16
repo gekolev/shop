@@ -1,8 +1,5 @@
 import Footer from 'components/layout/footer';
 
-export const config = {
-  runtime: 'nodejs', // Use Node.js runtime instead of Edge runtime
-};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

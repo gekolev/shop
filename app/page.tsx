@@ -9,9 +9,7 @@ export const metadata = {
   }
 };
 
-export const config = {
-  runtime: 'nodejs', // Use Node.js runtime instead of Edge runtime
-};
+
 
 export default function HomePage() {
   return (
