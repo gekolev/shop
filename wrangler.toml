@@ -1,0 +1,3 @@
+command = "pnpm install"
+node_version = "20.x"
+pnpm_version = "9.x"
