@@ -4,6 +4,10 @@ import Prose from 'components/prose';
 import { getPage } from 'lib/shopify';
 import { notFound } from 'next/navigation';
 
+export const config = {
+  runtime: 'nodejs', // Use Node.js runtime instead of Edge runtime
+};
+
 export async function generateMetadata({
   params
 }: {
