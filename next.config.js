@@ -12,7 +12,7 @@ module.exports = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.optimization.splitChunks.maxSize = 250000; // Adjust the size as needed
+      config.optimization.splitChunks.maxSize = 200000; // Adjust the size as needed
     }
     return config;
   },
